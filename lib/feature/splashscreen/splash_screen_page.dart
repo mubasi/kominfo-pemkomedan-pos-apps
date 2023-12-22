@@ -31,21 +31,23 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Center(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Center(
               child: Text(
-            "Kasir APP",
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          )),
-          Padding(
-              padding: const EdgeInsets.all(20),
-              child: LoadingAnimationWidget.waveDots(
-                  color: Colors.green, size: 60))
-        ],
+                "Kasir APP",
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+            ),
+            Padding(
+                padding: const EdgeInsets.all(20),
+                child: LoadingAnimationWidget.waveDots(
+                    color: Colors.green, size: 60))
+          ],
+        ),
       ),
-    ));
+    );
   }
 }
